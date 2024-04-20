@@ -1,0 +1,25 @@
+<template>
+    <div class="layout-container flex">
+        <SideBar/>
+        <div class="page-list w-full mx-64 p-8 mr-0">
+          <TopBar/>
+          <ListUser/>      
+        </div>
+    </div>
+</template>
+
+<script>
+import SideBar from '@/components/component-share/side-bar/SideBar.vue';
+import TopBar from '@/components/component-share/top-bar/TopBar.vue';
+import ListUser from '@/components/list/List.vue';
+
+   export default {
+     name: 'PageList',
+     components : {
+        TopBar,
+        ListUser,
+        SideBar
+        
+     }
+   }
+</script>

@@ -1,20 +1,17 @@
 <template> 
-   <div class="layout-container flex">
-      <SideBar/>
-      <LayoutContentWrapper/>
-
-   </div>
+  <router-link to="/"/>
+    <router-link to="/about"/>
+    <router-view/>
 </template>
 
 <script>
-  import SideBar from './components/side-bar/SideBar.vue'
-  import LayoutContentWrapper from './components/layout-content-wrapper/LayoutContentWrapper.vue'
+
+
 
   export default {
     name: 'App',
     components: {
-      SideBar,
-      LayoutContentWrapper
+     
     }
   }
 </script>
